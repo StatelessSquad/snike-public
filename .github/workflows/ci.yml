@@ -47,4 +47,4 @@ jobs:
           path: './docs'
       - name: Deploy to GitHub Pages
         if: steps.check.outputs.docs_exists == 'true'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
