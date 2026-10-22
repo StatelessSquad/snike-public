@@ -1,0 +1,50 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  secrets-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      # gitleaks via its official image: free for organizations (gitleaks-action needs a paid license for orgs)
+      - name: gitleaks (full history)
+        run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:latest git /repo --redact --no-banner --exit-code 1
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pre-commit/action@v3.0.1
+      - name: Tests
+        run: make test
+  github-pages:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for docs folder
+        run: |
+          if [ -d "docs" ]; then
+            echo "docs_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "docs_exists=false" >> $GITHUB_OUTPUT
+        id: check
+      - name: Setup Pages
+        if: steps.check.outputs.docs_exists == 'true'
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        if: steps.check.outputs.docs_exists == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+      - name: Deploy to GitHub Pages
+        if: steps.check.outputs.docs_exists == 'true'
+        uses: actions/deploy-pages@v4
