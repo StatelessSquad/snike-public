@@ -1,0 +1,16 @@
+{
+  "name": "Snike",
+  "short_name": "Snike",
+  "description": "Snike. Guide a worm through the dark. Eat light to grow — and by stages sprout legs, a tail and a lizard's head. Fully offline, no accounts, no ads.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07081a",
+  "theme_color": "#7c5cff",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
