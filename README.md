@@ -1,6 +1,6 @@
 # Snike — product page
 
-Snike. Guide a worm through the dark. Eat light to grow — and by stages sprout legs, a tail and a lizard's head. Fully offline, no accounts, no ads.
+A snake game where you grow up. Eat fruit and golden eggs, sprout legs at length 10, and shed your skin into a lizard at 20. No ads, no accounts, plays offline.
 
 The public page of **Snike** by [StateLess Squad](https://github.com/StatelessSquad).
 Live at https://statelesssquad.github.io/snike-public/
