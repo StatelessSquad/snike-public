@@ -1,6 +1,6 @@
 # Snike — product page
 
-A snake game where you grow up. Eat fruit and golden eggs, sprout legs at length 10, and shed your skin into a lizard at 20. No ads, no accounts, plays offline.
+A worm in the dark eats light and, meal by meal, sheds its skin into a lizard. Steer anywhere, chain combos, dash through the shades. No ads, no accounts, plays offline.
 
 The public page of **Snike** by [StateLess Squad](https://github.com/StatelessSquad).
 Live at https://statelesssquad.github.io/snike-public/
