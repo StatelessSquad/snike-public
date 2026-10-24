@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://statelesssquad.github.io/snike-public/</loc></url>
-  <url><loc>https://statelesssquad.github.io/snike-public/privacy/</loc></url>
-  <url><loc>https://statelesssquad.github.io/snike-public/support/</loc></url>
-  <url><loc>https://statelesssquad.github.io/snike-public/terms/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://statelesssquad.github.io/snike-public/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/og.png</image:loc></image:image>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/shots/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/shots/worm.webp</image:loc></image:image>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/shots/legs.webp</image:loc></image:image>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/shots/lizard.webp</image:loc></image:image>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/shots/egg.webp</image:loc></image:image>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/shots/dark.webp</image:loc></image:image>
+    <image:image><image:loc>https://statelesssquad.github.io/snike-public/assets/shots/day.webp</image:loc></image:image>
+    <video:video><video:thumbnail_loc>https://statelesssquad.github.io/snike-public/assets/shots/hero.webp</video:thumbnail_loc><video:title>Snike gameplay</video:title><video:description>Eat the light. Grow legs. Bite the dark.</video:description><video:content_loc>https://statelesssquad.github.io/snike-public/assets/demo.mp4</video:content_loc></video:video>
+  </url>
+  <url>
+    <loc>https://statelesssquad.github.io/snike-public/privacy/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://statelesssquad.github.io/snike-public/support/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://statelesssquad.github.io/snike-public/terms/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
 </urlset>
